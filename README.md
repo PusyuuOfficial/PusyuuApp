@@ -2,8 +2,6 @@
 このプロジェクトではアンドロイドWEBVIEWでウェブサイトを使いどこまで周りと大差のないアプリが作れるかを研究してます。
 オープンソースにするためプシューアプリで使っているソースコードをここに公開しています。
 
-アプリのダウンロードリンクこちら↓
-https://21emon.wjg.jp:2022/PusyuuApp/
+アプリのダウンロードリンクこちら→ https://21emon.wjg.jp:2022/PusyuuApp/
 
-アプリ本体のページはこちら↓
-http://21emon.wjg.jp/androidapp/
+アプリ本体のページはこちら→ http://21emon.wjg.jp/androidapp/
