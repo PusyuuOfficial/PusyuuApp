@@ -1,0 +1,736 @@
+@charset "UTF-8";
+
+body {
+  background-image: url("3.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+ *----------------------------------
+ | CSSバージョン :v6.5            |
+ | ラストアップデート: 2022-12-20 |
+ | © 2022-2022 by Pusyuu          |
+----------------------------------*
+
+/****************************/
+/* 色、模様、サイズ、調整部 */
+/****************************/
+
+h1 {color: #0000ff; }
+h2 {color: #00ffff; }
+h3 {color: #00aaff; }
+p  {color: #ffffff; }
+th {color: #ffffff; }
+td {color: #ffffff; }
+li {color: #FFFFFF; }
+
+h2 {
+  background: -webkit-linear-gradient(left, #ff2b00, #ffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  width: 100%; height: 2px;
+  background-image: -webkit-linear-gradient(left, #ff2b00, #ffff00);
+  background-image: -ms-linear-gradient(left, #ff2b00, #ffff00);
+}
+
+//h2 {
+  font-size: 2em;
+  text-aligin: center;
+  line-height: 0.95em;
+  font-weight: bold;
+  color: #FFF;
+  text-shadow: 0 0 0.10em #2962FF, 0 0 0.15em #2962FF, 0 0 0.80em #2962FF, 0 0 1.00em #2962FF; 
+}
+
+.senn-1 {
+ height: 5px;
+ width: 80%;
+ background-color: #aaff00;
+ border: none;
+}
+
+.senn-2 {
+ height: 5px;
+ width: 60%;
+ background-color: black;
+ border: none;
+}
+
+.marukado_waku {
+  border: solid 2px skyblue;
+  border-radius: 5px;
+  padding: 0.5em 1em 0.5em 2.3em;
+  possition: relative;
+}
+
+.kiyaku {
+  color: #00ff33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.Copyright {
+color:#e6e6e6; margin: auto;
+}
+
+.text {
+  animation: flash 5s linear infinite;
+  webkit-animation: flash 1s linear infinite;
+}
+@keyframes flash {
+  0%,33%,66%,100%{
+    opacity: 0;
+}
+  12%{
+color:#ff5353;
+opacity: 1;
+}
+  24%{
+color:#ffcf53;
+opacity: 1;
+}
+  36%{
+color:#e8ff53;
+opacity: 1;
+}
+  48%{
+color:#53ff5d;
+opacity: 1;
+}
+  60%{
+color:#53ffbc;
+opacity: 1;
+}
+  72%{
+color:#5393ff;
+opacity: 1;
+}
+  84%{
+color:#ca53ff;
+opacity: 1;
+}
+  100%{
+color:#ff53bd;
+opacity: 1;
+}
+}
+@-webkit-keyframes flash {
+  0%,33%,66%,100%{
+    opacity: 0;
+}
+  12%{
+color:#ff5353;
+opacity: 1;
+}
+  24%{
+color:#ffcf53;
+opacity: 1;
+}
+  36%{
+color:#e8ff53;
+opacity: 1;
+}
+  48%{
+color:#53ff5d;
+opacity: 1;
+}
+  60%{
+color:#53ffbc;
+opacity: 1;
+}
+  72%{
+color:#5393ff;
+opacity: 1;
+}
+  84%{
+color:#ca53ff;
+opacity: 1;
+}
+  100%{
+color:#ff53bd;
+opacity: 1;
+}
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid green;
+}
+
+th {
+  border: 1px solid green;
+}
+
+tr {
+   border: 1px ridge;
+}
+
+td {
+  border: 1px solid green;
+}
+
+.img-rs_syou {
+  width: 13vw;
+  height: auto;
+}
+
+.img-rs_tyuu {
+  width: 30vw;
+  height: auto;
+}
+
+.img-rs_dai {
+  width: 50vw;
+  height: 100vh;
+}
+
+/******************/
+/* HERO調整部 */
+/******************/
+
+.hero {
+    background-image: url("1.gif");
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+}
+.hero > strong {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/******************/
+/* ヘッダー調整部 */
+/******************/
+
+.header {
+
+}
+
+/************************************/
+/* ヘッダー上のナビゲーション調整部 */
+/************************************/
+
+.header_nav {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  position: relative;
+}
+
+/**********************/
+/* ヘッダーロゴ調整部 */
+/**********************/
+
+.header_logo {
+  width: 100px;
+}
+
+.header_logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/****************/
+/* メイン調整部 */
+/****************/
+
+.main {
+  //background-color: #000000;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  height: auto;
+  display: flex;
+}
+
+/******************/
+/* フッター調整部 */
+/******************/
+
+.footer {
+
+}
+
+/********************/
+/* 親要素周りの余白 */
+/********************/
+
+.main_yohaku {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer_yohaku {
+  margin: auto;
+}
+
+/******************/
+/* フォーム調整部 */
+/******************/
+
+.form-2 {
+  padding: 10px;
+  text-align: left;
+}
+
+.form-3 {
+  padding: 10px;
+  text-align: left;
+} 
+
+.form-button {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form_yohaku {
+  margin: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+/****************/
+/* ブログ調整部 */
+/****************/
+
+.blog_card {
+  padding: 0 10px;
+}
+
+.blog_card_link {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  background-color: #008099;
+  position: relative;
+  transition: background-color .25s;
+}
+
+.blog_card_link:hover {
+  background-color: #FF4000;
+}
+
+.blog_card_label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #999;
+  color: #fff;
+  display: block;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.card_image {
+  width: 100%;
+  height: auto;
+}
+
+.blog_card_info {
+  padding: 5px 10px;
+}
+
+.blog_card_headline {
+  margin: 0;
+}
+
+.blog_card_description {
+  margin: 0;
+}
+
+.blog_avator {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+}
+
+.blog_avator_name {
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.blog_avator_image {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/******************/
+/* Flex box調整部 */
+/******************/
+
+.box-1 {
+    padding: 8px 19px;
+    margin: 10px;
+    color: #2c2c2f;
+    background: #666666;
+    border-top: solid 5px #fff;
+    border-right: solid 5px #fff;
+    border-left: solid 5px #fff;
+    border-bottom: solid 5px #fff;
+}
+.box-1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-2 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    font-weight: bold;
+    border: solid 3px #000000;
+    background-color: yellow;
+}
+.box-2 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-3 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    background: #FFF;
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+    background-color: #000000;
+}
+.box-3 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-4 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    border: double 5px #4ec4d3;
+    background: #adff2f;
+}
+.box-4 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-5 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    background: #00bfff;
+    border: dashed 5px #2e2eff;
+}
+.box-5 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-6 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    color: #00BCD4;
+    background: #666666;
+    border-top: solid 6px #FFFFFF;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.50);
+}
+.box-6 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-7 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    background: #FFF;
+    border-radius: 10px;
+    background-color: #008099;
+}
+.box-7 p {
+    margin: 0; 
+    padding: 0;
+}
+
+box-8 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+box-8 p {
+    margin: 0;
+    padding: 0;
+}
+
+.yokoori {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/******************/
+/* グリッド調整部 */
+/******************/
+
+.grid {
+    margin: 0;
+    padding: 0;
+}
+.grid-item {
+    margin: auto;
+}
+.grid-col-2 > .grid-item {
+    width: 50%;
+}
+.grid-col-3 > .grid-item {
+    width: 33.3%;
+}
+.grid-col-4 > .grid-item {
+    width: 25%;
+}
+
+/****************************/
+/* ナビゲーションバー調整部 */
+/****************************/
+
+ul{
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+}
+
+ul li{
+  display: table-cell;
+  min-width: 50px;
+  transition: background-color 0.8s;
+}
+
+ul li a{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: bold;
+}
+
+ul li.current{
+  background-color: #80ff80;
+}
+
+ul li.current a{
+  color: #14a7cc;
+}
+
+ul li:hover{
+  background-color: #66ffe6;
+}
+
+/**********************************/
+/* ハンバーガーメニュー隠し調整部 */
+/**********************************/
+
+.menu-btn {
+  position: fixed;
+  bottom: 7px;
+  right: 7px;
+  display: none;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #000000;
+}
+
+/************************************/
+/* ハンバーガーメニュー、線の調整部 */
+/************************************/
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #0080ff;
+  position: absolute;
+  transition: all 0.45s;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
+}
+
+/**************************************/
+/* ハンバーガーメニュー×ボタン調整部 */
+/**************************************/
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;
+}
+
+/**********************************************/
+/* ハンバーガーメニュー、チェックボックス隠し */
+/**********************************************/
+
+#menu-btn-check {
+  display: none;
+}
+
+/**************************************/
+/* ハンバーガーメニュー、ボタン調整部 */
+/**************************************/
+
+.menu-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/**********************************************/
+/* ハンバーガーメニュー、ナビゲーション調整部 */
+/**********************************************/
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 80;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.45s;
+  overflow: scroll;
+}
+.Abaut_App {
+  padding: 50px;
+
+}
+
+/************************/
+/* レスポンシブ化調整部 */
+/************************/
+
+@media only screen and (max-width:999px){
+
+/************************/
+/* sm tb版 メイン調整部 */
+/************************/
+
+.main {
+  //background-color: #000000;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  height: auto;
+  display: flex;
+}
+
+/**************************/
+/* sm tb版 フッター調整部 */
+/**************************/
+
+.footer {
+
+}
+
+/****************************/
+/* sm tb版 親要素周りの余白 */
+/****************************/
+
+.main_yohaku {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer_yohaku {
+  margin: auto;
+}
+
+/****************************/
+/* sm tb版 画像AUTOリサイズ */
+/****************************/
+
+.img-rs_syou {
+  width: 30vw;
+  height: auto;
+}
+
+.img-rs_tyuu {
+  width: 40vw;
+  height: auto;
+}
+
+.img-rs_dai {
+  width: 88vw;
+  height: 100vh;
+}
+
+/********************************/
+/* sm tb版 フォームAUTOリサイズ */
+/********************************/
+
+.form-table,
+.form-table tbody,
+.form-table tr,
+.form-table th,
+.form-table td {
+  display: block;
+}
+
+}

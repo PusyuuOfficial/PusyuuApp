@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<title>プシューアプリ - ホーム</title>
+<link rel="stylesheet" href="./SystemFolder/CssData/Style.css">
+<link rel="shortcut icon" href="./SystemFolder/IconData/favicon.ico">
+<script type="text/javascript" src="./SystemFolder/JsData/script.js"></script>
+</head>
+<body>
+
+<header class="header">
+ <div class="header_nav">
+   <div class="hamburger-menu">
+     <input type="checkbox" id="menu-btn-check">
+     <label for="menu-btn-check" class="menu-btn"><span></span></label>
+   <div class="menu-content">  
+     <div class="Abaut_App">    
+       <h3>アプリの詳細情報</h3>
+       <p>ここでは、プシューが開発したWEBアプリまたは、他人が作ったWEBアプリをインターネット経由で埋め込んで公開してますマルチアプリに近い感じです。
+       このアプリはWEBVIEWといわれるアンドロイドブラウザーコンポーネントで機能しておりますなのでオフラインですと機能しません予めご了承ください。
+       このアプリでは、アプリ更新の際アプリの再起動のみで完了いたします。ですがAndroidアプリ自体、例えば時間をおいてもアクセスできない、アプリを立ち上げを何度やっても落ちる際は、
+       Androidアプリ側の問題ですのでプシューサービスの担当までご連絡ください。</p>
+       <h3>バージョン情報</h3>
+       <marquee bgcolor="#FFFFFF" scrollamount="4">このバージョンでは、よりコンテンツを楽しめるよう品数を増やしました。バグ修正を行いました。 このアプリのバージョンbeta3.4.0</marquee>
+     </div>
+   </div>
+   </div>
+ </div>
+</header>
+
+<main class="main">
+ <div class="main_yohaku">
+
+  <h2>掲示板!!</h2>
+  <p>ここでは、いわゆる掲示板投稿が可能です。誤って、投稿してしまった場合、削除願い等は、ナビゲーションバーのお問い合わせフォームより、お送りください。
+     ここで登校したデータは、JSON形式で保存され、データベースに記録することはありません。※現在ご利用いただけない可能性がございます。送信の際、暗号化が行われません、大丈夫な方のみお使いください。</p>
+  <iframe class="img-rs_dai" src="http://21emon.wjg.jp:1751/log_json/board.php"></iframe>
+
+  <h2 id="ps">パスタ作ったお前ボタン</h2>
+  <p>タイミングよく下にあるパスタボタンを押して遊ぼう！！</p>
+  <a href="#ps" id="btn01"><img  width="100vw" src="./SystemFolder/IconData/pasta.png" alt="パスタボタン"></a></img>
+
+  <h2>天気予報</h2>
+  <p>ここでは、地震の現在を表示できます。※様々な問題があるためこちらの機能は、予告なく急になくなる場合があります。</p>
+  <iframe class="img-rs_dai" src="https://wttr.in"></iframe>
+
+  <h2>地震モニター!</h2>
+  <p>ここでは、地震の現在を表示できます。※様々な問題があるためこちらの機能は、予告なく急になくなる場合があります。</p>
+  <iframe class="img-rs_dai" src="http://www.kmoni.bosai.go.jp"></iframe>
+
+  <h2>オセロゲーム</h2>
+  <p>オセロ大戦ができます。<a href="https://kana.github.io/othello-js/" target="_blank">この方が作りました。</a></p>
+  <iframe class="img-rs_dai" src="./OseroJS/osero.html"></iframe>
+
+ </div>
+</main>
+
+<footer class="footer">
+ <div class="footer_yohaku">
+       <article>
+
+      </article>
+ </div>
+</footer>
+
+</body>
+</html>
