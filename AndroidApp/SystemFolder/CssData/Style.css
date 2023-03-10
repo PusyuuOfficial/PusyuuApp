@@ -23,6 +23,7 @@ h1 {color: #0000ff; }
 h2 {color: #00ffff; }
 h3 {color: #00aaff; }
 p  {color: #ffffff; }
+a  {color: #fff000; }
 th {color: #ffffff; }
 td {color: #ffffff; }
 li {color: #FFFFFF; }
@@ -653,6 +654,7 @@ ul li:hover{
   top: 0;
   left: 100%;
   z-index: 80;
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transition: all 0.45s;
@@ -660,7 +662,6 @@ ul li:hover{
 }
 .Abaut_App {
   padding: 50px;
-
 }
 
 /************************/
